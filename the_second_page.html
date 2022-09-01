@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <link rel="shortcut icon" href="Entropy_favicon.ico" type="image/x-icon">
+   <title>The Second Page</title>
+</head>
+<body>
+   <h1>Welcome to The Second Page</h1>
+   <p>Here is the second page where I'll continue my HTML and CSS learning.</p>
+   <p>To go back to the previous page, just click <a href="index.html" target="_self" rel="prev">here</a>.</p>
+
+   <h2>Download from a Link</h2>
+   <ol>
+      <li>Do the same as you do when creating a link;
+      <li>Use the <code>download=""</code> paramether to indicate a file to be downloaded;
+      <li>Use the <code>type=""</code> paramether to indicate the file type (search for media types <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="nofollow">here</a>.);
+      <li>Now, you're be abble to download <0 href="Useful Files/ZIP_Photos.zip" download="ZIP_Photos.zip" type="application/zip">useful files</a>.
+   </ol>
+
+   <h2>Dynamic Image</h2>
+   <p>To adapt images to the screen size, use <code>&lt;picture&gt;</code>.</p>
+   <ul type="square">
+      <li>After using the tag mentioned above, put an image normally, using <code>&lt;img&gt;</code>;
+      <li>For creating an adapted image use <code>&lt;source&gt;</code> above the image placed;
+      <li><code>media=""</code> paramether defines the screen size to adapt the image;
+      <li><code>srcset=""</code> paramether is used to write the picture source;
+      <li><code>type=""</code> paramether defines the media type;
+      <li>Now, you may test the following picture for your screen size.
+   </ul>
+
+   <picture>
+      <source media="(min-width: 800px)" srcset="Uncomfortable/uncomfortable_rat-750.png" type="image/png">
+      <img src="Uncomfortable/uncomfortable_rat-250.png" alt="Rat Cupcake">
+   </picture>
+
+   <h2>Audio</h2>
+   <h3>Locally Hosted</h3>
+   <p>To put audios on your site use <code>&lt;audio&gt;</code> tag and the next paramethers.</p>
+
+   <h4>Uncompatible Way</h4>
+   <ul type="circle">
+      <li><code>src=""</code> paramether is used to write the audio source;
+      <li><code>controls</code> paramether gives the audio media control;
+      <li><code>autoplay</code> paramether, as itself says, automatically plays the audio;
+      <li><code>loop</code> paramether autoreplay the audio;
+      <li><code>preloads=""</code> is basically used to defines when media is loaded:
+         <ul type="disc">
+            <li>"<code>auto</code>" load audio at same time the page is loaded, slowing down the page load;
+            <li>"<code>metadata</code>" load some audio infos at same time the page is loaded;
+            <li>"<code>none</code>" doesn't load any information while the page is loaded.
+         </ul>
+   </ul>
+
+   <h4>Compatible Way</h4>
+   <p>The compatible way to put an audio in your site is used to turn avaible different files formats (MP3 - MPEG -, WAV, OGG). To use that way make the same in above way, however, does not write a single source. Use <code>&lt;source&gt;</code> into <code>&lt;audio&gt;</code> tag as done in dynamic pictures, write the different sources and put a link in case the files formats aren't working, wich will redirect to the audio download.</p>
+   <audio preload="metadata" autoplay controls loop>
+      <source src="" type="">
+      <p>Can't play audio in your browser, try to download <a href="https://pikbest.com/sound-effects/horror-and-weird-sound_246872.htm" target="_blank" rel="nofollow">here</a>.</p>
+   </audio>
+   <p>Important audio <a href="https://pikbest.com/sound-effects/horror-and-weird-sound_246872.htm" target="_blank" rel="nofollow">here</a>.</p>
+
+   <h3>Externally Hosted</h3>
+   <p>We can integrate audios from Spotify or other platfoms like. Just choose the audio, go to "Share" and use the "embed" option.</p>
+   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7HFGRoMes18hiSSJB8P40v?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+   <h2>Videos</h2>
+   <ul>
+      <li>To search and download videos, use <a href="https://www.pexels.com/" target="_blank" rel="nofollow">Pexels</a>;
+      <li>To convert videos for free use HandBrake, the same way Gimp is used for photos;
+      <li>Pay attention in video size and compatibility;
+      <li>Video formats may be:
+         <ul>
+            <li>MP4 (<code>.mp4</code> and <code>.m4v</code>);
+            <li>WebM (<code>.webm</code>);
+            <li>OGG (<code>.ogv</code>).
+         </ul>
+   </ul>
+   
+   <h3>Locally Hosted Videos</h3>
+   <ul>
+      <li>Do the same as when adding audios but, using <code>video</code> tag;
+      <li>The <code>width=""</code> paramether allows you to define the video width on screen;
+      <li><code>poster=""</code> is an paramether used to write the thumbnail source.
+   </ul>
+   <video width="560px" height="315px" poster="Videos/eye_thumb.png" controls>
+      <source src="Videos/Weird Eye-720P30.mp4" type="video/mp4">
+      <source src="Videos/Weird Eye-720P30.ogv" type="video/ogg">
+      <source src="Videos/Weird Eye-720p30.m4v" type="video/mp4">
+      <source src="Videos/Weird Eye-720P30.webm" type="video/webm">
+      
+      <p>Your browser doesn't support video playback. Try to download the video <a href="https://www.pexels.com/video/a-footage-of-an-eye-5529964/" target="_blank" rel="nofollow">here</a>.</p>
+   </video>
+
+   <h3>Externally Hosted Videos</h3>
+   <p>We can integrate videos from YouTube or other platfoms like Vimeo. Just choose the video, go to "Share" and use the "embed" option.</p>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/qO__qJs6Gs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+   <p>Well, here we are: finally, almost in the end of the first module of the HTML5 and CSS3 course. Now, you can access the next page, where I'll talk about CSS3 for the first time, starting writing form and not semantics. Start studying styles <a href="css3_studying_1.html" target="_self" rel="next">here</a>.</p>
+
+</body>
+</html>

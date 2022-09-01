@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+@font-face {
+   font-family: 'Dandroid';
+   src: url(../Challenge_001_files/pacote-projeto-d010/fontes/idroid.otf) format('opentype');
+}
+
+@font-face {
+   font-family: 'Bebas';
+   src: url(../Challenge_001_files/pacote-projeto-d010/fontes/Bebas_Neue/BebasNeue-Regular.ttf) format('truetype');
+}
+
+
+body{
+   background-color: #84e1ad;
+   margin: 0px;
+}
+
+header{
+   background-image: linear-gradient(to top, #1a5c38, #268a53, #3cdb83);
+   font: normal 400 1em cursive, Arial, Helvetica, sans-serif;
+   color: white;
+   box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.288);
+
+   text-align: center;
+   padding: 0.3em 1em;
+   margin: 0px;
+}
+
+nav{
+   text-align: left;
+}
+
+nav > a:hover{
+   color: rgb(190, 190, 190);
+   background-color: #1f7747;
+}
+
+nav > a{
+   text-decoration: none;
+   color: white;
+   padding: 0.6em;
+   border-radius: 5px;
+}
+
+header > h1{
+   font-family: 'Bebas', Impact, cursive, Arial, sans-serif;
+   font-weight: 500;
+   font-size: 2.5em;
+   text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.301);
+}
+
+header > p{
+   font-family: Arial, Helvetica, sans-serif;
+   text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.247);
+}
+
+main{
+   font: normal 400 1em cursive, Arial, Helvetica, sans-serif;
+   text-align: center;
+
+   width: 75%;
+   background-color: white;
+   margin: auto;
+   margin-top: 0px;
+   padding: 1em 0em 1em 0em;
+   border-radius: 0.3em 0.3em 1em 1em;
+   box-shadow: 0.6em 0.6em 0.6em rgba(0, 0, 0, 0.185), -0.5em -0.5em 0.5em rgba(0, 0, 0, 0.288);
+}
+
+main > h1, h2, h3{
+   font-family: 'Dandroid', Arial, sans-serif;
+   color: #1a5c38;
+   font-size: 2em;
+   text-align: left;
+   margin-left: 0.8em;
+}
+
+main > h2{
+   background-image: linear-gradient(to right, #298d565e, #30b66c3a, #30bd6f2d, white 75%);
+   padding-left: 0.3em;
+}
+
+main > p{
+   text-align: justify;
+   text-indent: 1.5em;
+   padding: 0em 1.5em;
+}
+
+div#iframe_div{
+   background-color: #1a5c38;
+   width: 100%;
+   margin: 2em auto 2em auto;
+   padding: 1.7em 0em 1.7em 0em;
+}
+
+section{
+   font: normal 400 1em cursive, Arial, Helvetica, sans-serif;
+   background-color: #23b4645b;
+   box-shadow: 0.6em 0.6em 0.6em rgba(0, 0, 0, 0.247);
+   width: 97%;
+   margin: auto;
+   border-radius: 20px;
+   text-align: justify;
+   text-indent: 1.5em;
+   font-size: 1em;
+}
+
+div#section_tittle{
+   background-color: #0f8143be;
+   padding: 3px 0px 3px 10px;
+   border-radius: 20px 20px 0px 0px;
+   color: white;
+   text-align: left;
+}
+
+div#section_tittle > h1{
+   font-weight: bold;
+   font-size: 1.1em;
+   text-indent: 0em;
+}
+
+div#section_contents{
+   padding: 0em 1em 1em 1em;
+}
+
+div.no_ident{
+   text-indent: 0px;
+}
+
+div#div_1, div#div_2{
+   display: inline-block;
+   width: 49%;
+   margin: auto;
+   text-align: left;
+}
+
+footer{
+   background-color: #1a5c38;
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+   margin: 1.5em auto 0em auto;
+   text-align: center;
+   padding: 1px;
+}

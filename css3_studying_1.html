@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+   <link rel="shortcut icon" href="Entropy_favicon.ico" type="image/x-icon">
+   <title>CSS3 Studying</title>
+</head>
+
+
+<body style="background-color: black; color: white; font-family: 'Times New Roman', Times, serif;">
+   <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; "><a href="the_second_page.html" target="_self" rel="prev" style="color: rgb(99, 99, 202); text-decoration: none;">&larr; Back to previous page</a></p>
+
+   <h1 style="background-color: brown;">CSS Inline</h1>
+   <p>The least used way of writing styles using CSS3 is writing in each line, adding the styles as a paramether of the current tag.</p>
+   <ul style="background-color: darkslategrey;">
+      <li>Choose the tag to customize;
+      <li>Add the <code>style</code> paramether;
+      <li>Write the customizations.
+   </ul>
+
+   <p>Code used to write the above part (CSS inline example):</p>
+   <pre style="background-color: gray; font-family: 'Courier New', Courier, monospace;">
+      <code>
+   &lt;body style="background-color: black; color: white; font-family: 'Times New Roman', Times, serif;">
+      &lt;h1 style="background-color: brown;"&gt;CSS Inline&lt;/h1&gt;
+      &lt;p&gt;The least used way of writing styles using CSS3 is writing in each line, adding the styles as a paramether of the current tag.&lt;/ p&gt;
+      &lt;ul style="background-color: darkslategrey;"&gt;
+         &lt;li&gt;Choose the tag to customize;
+         &lt;li&gt;Add the &lt;code&gt;style&lt;/code&gt; paramether;
+         &lt;li&gt;Write the customizations.
+      &lt;/ul&gt;
+   &lt;/body&gt;
+      </code>
+   </pre>
+
+
+   <h1>Local/Internal CSS</h1>
+   <p>Knowing that inline CSS isn't the best option to write the styles of your website, we can a better way: Internal CSS. With that way to writing styles, the customizations aren't written in each line, but rather, written on head scope.</p>
+
+   <ol>
+      <li>Open and close the <code>&lt;style&gt;</code> tag;
+      <li>Inside the "style" tag, write the tags to be customized;
+         <ul>
+            <li>Don't use "&lt;" and "&gt;";
+            <li>Open and close braces ("{}");
+         </ul>
+      <li>Inside the braces of the tag, write the customizations, as done in CSS inline.
+   </ol>
+
+   <p>Using that way, the code is more organized and we don't need to write the same thing for multiple tags. However, for especific customizations, we still need to write the inline way, until we learn a way to better specify the tags.</p>
+
+   <h1>External CSS</h1>
+   <p>The better way to write the CSS styles is surely using the external way. That will allow us to write a single code that can be used for multiple codes.</p>
+
+   <ol>
+      <li>Create a ".css" file;
+      <li>Write <code>@charset "UTF-8"</code>;
+      <li>Write the same way it was written in local CSS;
+      <li>Use "<code>link:css</code>" to include the styles of the ".css" file.
+   </ol>
+
+   <p>Well, now we've done the learning of CSS writing types, however, we still haven't learned how to make a website pleasant, with the use of a good design from CSS. So we can continue the learning <a href="design_studying_1.html" target="_self" rel="next">here</a>.</p>
+
+
+</body>
+
+</html>

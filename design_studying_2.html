@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="CSS3/design_studying_2.css">
+   <link rel="shortcut icon" href="Entropy_favicon.ico" type="image/x-icon">
+
+   <title>CSS Design Studying - Font Styles</title>
+</head>
+
+
+<body>
+   <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><a href="design_studying_1.html" target="_self" rel="prev" style="color: rgb(155, 41, 21);"><abbr title="Font Family: Franklin Gothic Medium"><b>&larr; Back</b></abbr></a></p>
+
+   <main>
+      <h1><abbr title="Font Style: Times New Roman">TYPOGRAPHY</abbr></h1>
+
+      <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;"><abbr title="Font Style: Cambria">Derived from the Greek - <em>typos</em>, "form" or "impression", and <em>graphein</em>, "to write" - is the art and technique of arranging type to make written language legible, readable and appealing when displayed.</abbr></p>
+
+      <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-top: 5%;"><abbr title="Font Family: Lucida Sans">TYPEFACE ANATOMY</abbr></h2>
+      <a href="https://material.io/design/typography/understanding-typography.html#type-properties" target="_blank" rel="nofollow"><img src="Typography/typeface_anatomy.png" alt="Typeface Anatomy" style="width: 45%; margin-top: 5%; margin-left: 6%;"></a>
+      <a href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/10d080b5-3354-4155-a902-c42a81647dc0/d5g8ulm-aa583488-d8af-4c42-bb98-994721fa5706.jpg/v1/fill/w_1219,h_655,q_70,strp/typography_series___01___anatomy_of_typography_by_martinsilvertant_d5g8ulm-pre.jpg" target="_blank" rel="nofollow"><img src="Typography/ty.jpg" alt="Typeface Glossary" style="width: 45%; margin-top: -30%; margin-bottom: 5%; margin-left: 49%;"></a>
+
+      <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin-top: 7%"><abbr title="Font Family: Impact">CATEGORIES</abbr></h2>
+      <a href="https://www.toptal.com/designers/typography/typeface-classification#:~:text=There%20are%20five%20basic%20classifications,script%2C%20monospaced%2C%20and%20display." target="_blank" rel="nofollow"><img src="Typography/typeface_categories.png" alt="Typeface Categories" style="width: 66%; margin-left: 17.5%;"></a>
+      
+      <h2>CSS Safe Fort Combinations</h2>
+      <p>In case the browser/computer doesn't have support for a specific font family, use "<a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank" rel="nofollow">Web Safe Fonts</a>".</p>
+      
+      <p>Example:<br>
+      Replace <code>font-family: 'Franklin Gothic Medium'</code> with <code>font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif</code>.
+      </p>
+
+      <h2>Font Size</h2>
+
+      <h3>Absolute Measures</h3>
+      <ul>
+         <li>cm;
+         <li>mm;
+         <li>in;
+         <li>px;
+         <li>pt;
+         <li>pc.
+      </ul>
+
+      <h3>Relative Measures</h3>
+      <ul>
+         <li>em (capital M height);
+         <li>ex (x height);
+         <li>rem (relative to root, body font);
+         <li>vw (viewport widht);
+         <li>vh (viewport height);
+         <li>%.
+      </ul>
+
+      <p>In relative measurements, 1 unit usually represents about 16px.</p>
+      <p>"em" is recommended font size measurement by W3Schools.</p>
+
+      <h2>Weight - Font Widht</h2>
+      <p>Use <code>font-weight</code> and choose between "lighter", "normal", "bold" or "bolder" - to be more specific, choose a number between 100 and 900.<br>
+      Always pay attention to font availability for changes to be made.
+      </p>
+
+      <h2>Shorthand Font</h2>
+      <p>For the purpose of summarizing this:<br>
+      <code>font-style: "";</code><br>
+      <code>font-weight: "";</code><br>
+      <code>font-size: "";</code><br>
+      <code>font-family: "";</code><br>
+      Write this <code>font: "";</code> and set the same modifications in the same exactily order. You don't need to set all paramethers, but do not change the order.<br>
+      Example: <code>font: italic, bolder, 3em, Arial, sans-serif;</code>.
+      </p>      
+
+      <h2>Inserting External Fonts</h2>
+      <p>Use Google Fonts or DaFont, search for desired font family, check the characters and customizations compatibility and include it in your code - by downloading the font family or using embed option.</p>
+      <p>For embed option, use <code>&lt;link&gt;</code> on HTML or <code>&#64;import</code> on CSS.</p>
+      <p>If you download the font family, use <code>&#64;font-face</code> selector. At sequence, define <code>font-family</code> (by choosing the font name that you wanna use for it), <code>src: url() format()</code> and another standard stylizations.</p>
+
+      <h3>Font Family Source - <code>src: url() format()</code></h3>
+      <p><code>url()</code> is the name of the file, in the directory, after being downloaded.</p>
+      <p>There are 5 main types of <a href="https://www.w3schools.com/css/css3_fonts.asp" target="_blank" rel="nofollow"><code>format()</code></a>:</p>
+      <ul>
+         <li>opentype (otf);
+         <li>truetype (ttf);
+         <li>embedded-opentype;
+         <li>truetype-aat (Apple Advanced Typography);
+         <li>svg.
+      </ul>
+
+      <p>Same browsers may be compatible to "otf" or/and "ttf". To add more than one format, write a comma after previous format and then, add the next.</p>
+
+      <h2>Capture Fonts</h2>
+      <p>If you saw a font family that you liked, but you don't know the name, use <a href="https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh" target="_blank" rel="nofollow">Fonts Ninja</a> Chrome extension if it is a text. However, if it is a picture, use <a href="https://www.whatfontis.com/" target="_blank" rel="nofollow">whatfontis.com</a>, <a href="https://www.fontsquirrel.com/" target="_blank" rel="nofollow">fontsquirrel.com</a> or <a href="https://www.myfonts.com/" target="_blank" rel="nofollow">myfonts.com</a></p>
+
+      <h2>Text Alignment</h2>
+      <dl>
+         <dt><code>text-align</code> (center, right, left, justify);
+         <dd>To align the text.
+         <dt><code>text-ident</code>;
+         <dd>To add space at the beginning of a paragraph relative to the margin.
+      </dl>
+   </main>
+</body>
+</html>
