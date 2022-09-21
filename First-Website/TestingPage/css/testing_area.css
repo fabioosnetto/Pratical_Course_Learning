@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+*{
+   margin: 0;
+}
+
+header{
+   background-color: rgb(15, 15, 15);
+   background-image: url(../images/coding_banner-420-blur.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: left bottom;
+
+   height: 36.66vh;
+   text-align: center;
+
+   box-shadow: 20px 20px 15px 10px inset rgba(0, 0, 0, 0.329);
+}
