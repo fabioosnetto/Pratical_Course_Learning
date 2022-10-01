@@ -1,9 +1,29 @@
 @charset "UTF-8";
 
+:root{
+   --theadback: black;
+   --theadfont: white;
+   --freeareaback: black;
+   --freeareafont: white;
+   --generalinfoback: #262626;
+   --generalinfofont: white;
+   --infovalue1back: white;
+   --infovalue1font: black;
+   --infovalue2back: #ffc7ce;
+   --infovalue2font: #9c0006;
+   --infovalue3back: white;
+   --infovalue3font: black; 
+   --deliveryback: #0d0d0d;
+   --deliveryfont: white;
+   --partsback: black;
+   --partsfont: white;
+   --bordercolor: white;
+}
+
 *{
    margin: 0;
    padding: 0;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: Arial, Helvetica, sans-serif; 
 }
 
 header{
@@ -19,21 +39,93 @@ header{
    box-shadow: 20px 20px 15px 10px inset rgba(0, 0, 0, 0.329);
 }
 
+div#table1{
+   width: 95w;
+   overflow-x: auto;
+}
+
 table{
+   position: absolute;
+   left: 16%;
+   width: 755px;
    border-collapse: collapse;
-   /*width: 300px;
-   height: 300px;*/
    margin: 10vh 5vw 10vh 5vw;
    text-align: center;
 }
 
-tr, td{
-   width: 80px;
-   height: 80px;
-}
-
 table, tr, td{
-   border-color: black;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 12px;
+   height: 23px;
+   border-color: var(--bordercolor);
    border-width: 1px;
    border-style: solid;
+}
+
+.infocol{
+   width: 100px;
+   height: 23px;
+}
+
+.freecol{
+   width: 30px;
+   height: 23px;
+}
+
+.partscol{
+   width: 240px;
+   height: 23px;
+}
+
+.deliverycol{
+   width: 80px;
+   height: 23px;
+}
+
+.leftalign{
+   text-align: left;
+   padding-left: 3px;
+}
+
+thead{
+   position: sticky;
+   top: 0px;
+   background-color: var(--theadback);
+   color: var(--theadfont);
+   font-weight: bold;
+}
+
+.freearea{
+   background-color: var(--freeareaback);
+   color: var(--freeareafont);
+}
+
+.generalinfo{
+   background-color: var(--generalinfoback);
+   color: var(--generalinfofont);
+}
+
+#iinfovalue1{
+   background-color: var(--infovalue1back);
+   color: var(--infovalue1font);
+}
+
+#iinfovalue2{
+   background-color: var(--infovalue2back);
+   color: var(--infovalue2font);
+}
+
+#iinfovalue3{
+   background-color: var(--infovalue3back);
+   color: var(--infovalue3font);
+}
+
+.delivery{
+   background-color: var(--deliveryback);
+   color: var(--deliveryfont);
+}
+
+.parts{
+   background-color: var(--partsback);
+   color: var(--partsfont);
 }
