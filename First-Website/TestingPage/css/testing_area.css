@@ -33,30 +33,26 @@ header{
    background-attachment: fixed;
    background-position: left bottom;
 
-   height: 36.66vh;
+   height: 21.66vh;
    text-align: center;
 
    box-shadow: 20px 20px 15px 10px inset rgba(0, 0, 0, 0.329);
 }
 
 div#table1{
-   width: 95w;
    overflow-x: auto;
 }
 
 table{
-   position: absolute;
-   left: 16%;
-   width: 755px;
+   width: 579px;
    border-collapse: collapse;
-   margin: 10vh 5vw 10vh 5vw;
    text-align: center;
 }
 
 table, tr, td{
    font-family: 'Times New Roman', Times, serif;
-   font-size: 12px;
-   height: 23px;
+   font-size: 9px;
+   height: 14px;
    border-color: var(--bordercolor);
    border-width: 1px;
    border-style: solid;
@@ -129,3 +125,13 @@ thead{
    background-color: var(--partsback);
    color: var(--partsfont);
 }
+
+section#iframes{
+   width: 96vw;
+   height: 50vh;
+}
+
+/*iframe#iframe1{
+   width: 95vw;
+   height: 50vh;
+}*/

@@ -9,7 +9,7 @@
    
    <title>Testing Area</title>
    <link rel="shortcut icon" href="Entropy_favicon.ico" type="image/x-icon">
-   <link rel="stylesheet" href="../css/testing_area.css">
+   <link rel="stylesheet" href="../css/testing_area.css" media="screen and (max-width: 500px)">
 </head>
 
 
@@ -37,18 +37,18 @@
 
             <thead>
                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>EM FALTA - A</td>
-                  <td>ENTREGA</td>
-                  <td>EM FALTA - B</td>
-                  <td>ENTREGA</td>
+                  <th></th>
+                  <th></th>
+                  <th scope="colgroup">EM FALTA - A</th>
+                  <th scope="colgroup">ENTREGA</th>
+                  <th scope="colgroup">EM FALTA - B</th>
+                  <th scope="colgroup">ENTREGA</th>
                </tr>
             </thead>
 
             <tbody>
                <tr id="line_1">
-                  <td class="generalinfo" rowspan="4">QUANTIDADE TOTAL DE PEÇAS:</td>
+                  <th class="generalinfo" rowspan="4" scope="col">QUANTIDADE TOTAL DE PEÇAS:</td>
                   <td class="freearea"></td>
                   <td class="parts leftalign"></td>
                   <td class="delivery"></td>
@@ -101,7 +101,7 @@
                   <td class="delivery"></td>
                </tr>
                <tr id="line_8">
-                  <td class="generalinfo" rowspan="4">QUANTIDADE TOTAL EM FALTA:</td>
+                  <th class="generalinfo" rowspan="4" scope="col">QUANTIDADE TOTAL EM FALTA:</td>
                   <td class="freearea"></td>
                   <td class="parts leftalign"></td>
                   <td class="delivery"></td>
@@ -154,7 +154,7 @@
                   <td class="delivery"></td>
                </tr>
                <tr id="line_15">
-                  <td class="generalinfo" rowspan="4">QUANTIDADE TOTAL NECESSÁRIA:</td>
+                  <th class="generalinfo" rowspan="4" scope="col">QUANTIDADE TOTAL NECESSÁRIA:</td>
                   <td class="freearea"></td>
                   <td class="parts leftalign"></td>
                   <td class="delivery"></td>
@@ -203,6 +203,14 @@
             </tfoot>
          </table>
       </div>
+   </section>
+
+   <section id="iframes">
+      <iframe id="iframe1" src="https://dino-chrome.com/pt" frameborder="0" loading="lazy" width="100%" height="100%" sandbox="allow-same-origin, allow-scripts" referrerpolicy="no-referrer"></iframe>
+   </section>
+
+   <section id="forms">
+
    </section>
 </body>
 </html>
