@@ -39,6 +39,37 @@ header{
    box-shadow: 20px 20px 15px 10px inset rgba(0, 0, 0, 0.329);
 }
 
+button{
+   cursor: pointer;
+}
+
+menu#sections{
+   display: none;
+   color: black;
+   cursor: pointer;
+}
+
+menu > ul > li{
+   display: inline-block;
+   background-color: #646262;
+   height: 1.2em;
+   width: 3em;
+   padding: 1em;
+   border-radius: .5em;
+   margin: .3em;
+}
+
+menu > ul > li:hover{
+   background-color: #181818;
+   color: white;
+   transform: translate(-3px, -3px);
+   transition: ease-out;
+}
+
+section{
+   display: none;
+}
+
 div#table1{
    overflow-x: auto;
 }
@@ -135,3 +166,7 @@ section#iframes{
    width: 95vw;
    height: 50vh;
 }*/
+
+input#iothergender{
+   display: none;
+}

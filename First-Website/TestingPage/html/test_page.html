@@ -9,21 +9,28 @@
    
    <title>Testing Area</title>
    <link rel="shortcut icon" href="Entropy_favicon.ico" type="image/x-icon">
-   <link rel="stylesheet" href="../css/testing_area.css" media="screen and (max-width: 500px)">
+   <link rel="stylesheet" href="../css/testing_area.css" media="screen">
 </head>
-
 
 <body>
    <header>
       <h1>Welcome to My Own Testing Area!</h1>
       <p>Here, free space to ideas, tests and studies. Do not limit your creativity!</p>
+   
+      <button onclick="clickSections('sections', 'block')">[SECTIONS]*</button>
+            
+      <menu id="sections" style="display: none">
+         <ul>
+            <li id="mtables" onclick="clickSections('tables', 'block')">Tables</li>
+            <li id="miframes" onclick="clickSections('iframes', 'block')">iFrames</li>
+            <li id="mforms" onclick="clickSections('forms', 'block')">Forms</li>
+         </ul>
+      </menu>
+    
 
-      <nav>
-         <a href="#">[SECTIONS]*</a>
-      </nav>
    </header>
 		
-   <section id="tables">
+   <section id="tables" style="display: none">
       <div id="table1">
          <table>
             <colgroup>
@@ -205,12 +212,159 @@
       </div>
    </section>
 
-   <section id="iframes">
+   <section id="iframes" style="display: none">
       <iframe id="iframe1" src="https://dino-chrome.com/pt" frameborder="0" loading="lazy" width="100%" height="100%" sandbox="allow-same-origin, allow-scripts" referrerpolicy="no-referrer"></iframe>
    </section>
 
-   <section id="forms">
+   <section id="forms" style="display: none">
+      <form action="../javascript/cadastro.js" method="post" autocomplete="on">
+         <fieldset>
+            <legend>Personal Data</legend>
+            <p>
+               <label for="iname">Name:</label>
+               <input type="text" name="name" id="iname" maxlength="30" required>
+            </p>
 
+         <p>
+            <label for="ilastname">Lastname:</label>
+            <input type="text" name="lastname" id="ilastname" maxlength="30" required>
+         </p>
+         
+         <p><label for="icpf">CPF:</label>
+            <input type="text" name="cpf" id="icpf" pattern="^[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" placeholder="000.000.000-00" title="tip 001" minlenght="14" maxlength="14" required>
+         </p>
+         </fieldset>
+
+         <fieldset>
+            <legend>Contact</legend>
+            <p>
+               <label for="iemail">E-mail:</label>
+               <input type="email" name="email" id="iemail" autocomplete="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required>
+            </p>
+            <p>
+               <label for="inumber">Phone Number:</label>
+               <input type="tel" name="number" id="inumber" pattern="^\([0-9]{2}\)[0-9]{5}-[0-9]{4}$" placeholder="(DDD)00000-0000" minleght="14" maxlength="14" size="15" autocomplete="tel" required>
+            </p>
+         </fieldset>
+         
+         <fieldset>
+            <legend>Login Info</legend>
+            <p>
+               <label for="iusername">Username:</label>
+               <input type="text" name="username" id="iusername" autocomplete="username" required>
+            </p>
+            <p>
+               <label for="ipassword01">Password:</label>
+               <input type="password" name="password01" id="ipassword01" autocomplete="new-password" minlength="9" required>
+            </p>
+            <p>
+               <label for="ipassword02">Confirm Password:</label>
+               <input type="password" name="password02" id="ipassword02" autocomplete="new-password" minlength="9" required>
+            </p>
+         </fieldset>
+
+         <p>
+            <input type="submit" value="Send">
+         </p>
+
+         <p>
+            <input type="reset" value="Clear">
+         </p>
+      </form>
+
+
+      <form action="." method="post">
+         <p>
+            <input type="button" name="" id="" value="btn">
+         </p>
+         
+         <p>
+            <input type="checkbox" name="checkbox001" id="icheckbox001" checked><label for="icheckbox001">Fuck you!</label><br>
+            <input type="checkbox" name="checkbox001" id="icheckbox002"><label for="icheckbox002">Mother Fucker!</label><br>
+            <input type="checkbox" name="checkbox001" id="icheckbox003"><label for="icheckbox003">Son of a Bitch!</label><br>
+            <input type="checkbox" name="checkbox001" id="icheckbox004"><label for="icheckbox004">You ashole!</label><br>
+            <input type="checkbox" name="checkbox001" id="icheckbox005"><label for="icheckbox005">Damn!</label><br>
+            <input type="checkbox" name="checkbox001" id="icheckbox006"><label for="icheckbox006">Sucker!</label><br>
+         </p>
+
+         <p>
+            <input type="color" name="" id="">
+         </p>
+
+         <p>
+            <input type="date" name="" id="">
+         </p>
+
+         <p>
+            <input type="datetime-local" name="" id="">
+         </p>
+
+         <p>
+            <input type="file" name="" id="">
+         </p>
+
+         <p>
+            <input type="hidden" name="" id="">
+         </p>
+
+         <p>
+            <input type="image" name="" id="">
+         </p>
+
+         <p>
+            <input type="month" name="" id="">
+         </p>
+
+         <p>
+            <input type="number" name="grade" id="igrade" min="0" max="10" step=".25">
+         </p>
+
+         <fieldset>
+            <legend>Gender</legend>
+            <p>
+               <input type="radio" name="radio001" id="iradio001" value="M"><label for="iradio001">Male</label><br>
+               <input type="radio" name="radio001" id="iradio002" value="F"><label for="iradio002">Female</label><br>
+               <input type="radio" name="radio001" id="iradio003" value="G"><label for="iradio003">Gay</label><br>
+               <input type="radio" name="radio001" id="iradio004" value="L"><label for="iradio004">Lesbian</label><br>
+               <input type="radio" name="radio001" id="iradio005" value="O" onclick="clickOtherGender()"><label for="iradio005 othergender">Other</label>
+               <input type="text" name="othergender" id="iothergender" maxlength="25">
+            </p>
+         </fieldset>
+
+         <p>
+            <input type="range" name="" id="">
+         </p>
+
+         <p>
+            <input type="search" name="" id="">
+         </p>
+
+         <p>
+            <input type="time" name="" id="">
+         </p>
+
+         <p>
+            <input type="url" name="" id="">
+         </p>
+
+         <p>
+            <input type="week" name="" id="">
+         </p>
+      </form>
    </section>
 </body>
+
+<script>
+   function clickOtherGender(){
+      if(iothergender.style.display == "block"){
+         iothergender.style.display = "none";
+      }
+      else{
+         iothergender.style.display = "block";
+      }
+   }
+</script>
+
+<script src="../javascript/sections.js"></script>
+
 </html>
