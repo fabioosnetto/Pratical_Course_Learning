@@ -66,6 +66,11 @@ menu > ul > li:hover{
    transition: ease-out;
 }
 
+div#iflex_sections{
+   display: flex;
+   flex-direction: column;
+}
+
 section{
    display: none;
 }

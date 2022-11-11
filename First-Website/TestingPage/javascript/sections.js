@@ -65,49 +65,40 @@ function displayedSections(curr_id){
 
    switch (posicao._tables) {
       case 2:
-         document.getElementById("tables").style.position = "absolute"
-         document.getElementById("tables").style.top = "1000px"
+         document.getElementById("tables").style.order = "2"
          break;
       case 3:
-         document.getElementById("tables").style.position = "absolute"
-         document.getElementById("tables").style.top = "2000px"
+         document.getElementById("tables").style.order = "3"
          break;
             
       default:
-         document.getElementById("tables").style.position = "relative"
-         document.getElementById("tables").style.top = "0px"
+         document.getElementById("tables").style.order = "1"
          break;
    }
 
    switch (posicao._iframes) {
       case 2:
-         document.getElementById("iframes").style.position = "absolute"
-         document.getElementById("iframes").style.top = "1000px"
+         document.getElementById("iframes").style.order = "2"
          break;
       case 3:
-         document.getElementById("iframes").style.position = "absolute"
-         document.getElementById("iframes").style.top = "2000px"
+         document.getElementById("iframes").style.order = "3"
          break;
             
       default:
-         document.getElementById("iframes").style.position = "relative"
-         document.getElementById("iframes").style.top = "0px"
+         document.getElementById("iframes").style.order = "1"
          break;
    }
 
    switch (posicao._forms) {
       case 2:
-         document.getElementById("forms").style.position = "absolute"
-         document.getElementById("forms").style.top = "1000px"
+         document.getElementById("forms").style.order = "2"
          break;
       case 3:
-         document.getElementById("forms").style.position = "absolute"
-         document.getElementById("forms").style.top = "2000px"
+         document.getElementById("forms").style.order = "3"
          break;
             
       default:
-         document.getElementById("forms").style.position = "relative"
-         document.getElementById("forms").style.top = "0px"
+         document.getElementById("forms").style.order = "1"
          break;
    }
 }
