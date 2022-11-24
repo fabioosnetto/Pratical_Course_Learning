@@ -20,6 +20,31 @@
    --bordercolor: white;
 }
 
+::-webkit-scrollbar{
+   display: block;
+   width: 1vw;
+}
+::-webkit-scrollbar-track{
+   background-color: rgb(22 22 22);  
+   border-style: none solid none solid;
+   border-width: 1px;
+   border-color: #272727;
+}
+::-webkit-scrollbar-thumb{
+   background-color: #282828;
+}
+
+::-webkit-scrollbar-thumb:hover{
+   background-color: #404040;
+}
+
+::-webkit-scrollbar-button{
+   background-color: #1b1b1b;
+   border-style: solid;
+   border-width: 1px;
+   border-color: #272727;
+}
+
 *{
    margin: 0;
    padding: 0;
@@ -33,42 +58,91 @@ header{
    background-attachment: fixed;
    background-position: left bottom;
 
-   height: 21.66vh;
+   height: 222px;
+   padding-top: 1px;
    text-align: center;
 
    box-shadow: 20px 20px 15px 10px inset rgba(0, 0, 0, 0.329);
 }
 
+body{
+   height: 100%;
+   background-color: rgb(17, 43, 44);
+   overflow-y: scroll;
+}
+
+main{
+   background-color: rgb(201, 201, 201);
+   width: 70vw;
+   margin: 50px auto;
+   padding: 20px;
+   border-radius: 21px;
+   box-shadow: 9px 9px 15px  rgba(0, 0, 0, 0.205);
+}
+
+div#intro{
+   width: 50vw;
+   margin: 10px auto;
+   background-color: #0d0d0d71;
+   border-radius: 21px;
+   color: rgb(209, 209, 209);
+   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.301);
+   text-shadow: 2px 3px #0d0d0d65;
+   line-height: 3em;
+   font-variant: small-caps;
+}
+
 button{
+   background-color: rgb(146, 145, 170);
    cursor: pointer;
+   font-weight: bold;
+   width: 100px;
+   height: 33px;
+   border-radius: 7px;
+   border-style: solid;
+   border-width: 2px;
+   border-color: rgb(19, 19, 37);
+}
+
+button:hover{
+   background-color: rgb(37, 37, 37);
+   color: white;
 }
 
 menu#sections{
    display: none;
    color: black;
-   cursor: pointer;
 }
 
 menu > ul > li{
    display: inline-block;
    background-color: #646262;
-   height: 1.2em;
+   height: 1em;
    width: 3em;
    padding: 1em;
    border-radius: .5em;
    margin: .3em;
+   cursor: pointer;
 }
 
 menu > ul > li:hover{
    background-color: #181818;
    color: white;
-   transform: translate(-3px, -3px);
-   transition: ease-out;
+   transform: translate(4px, 4px);
+}
+
+p#isections_intro{
+   text-align: center;
+   font-variant: small-caps;
+   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.322);
 }
 
 div#iflex_sections{
+   margin-top: 3em;
    display: flex;
    flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
 }
 
 section{
@@ -163,15 +237,44 @@ thead{
 }
 
 section#iframes{
-   width: 96vw;
+   width: 66vw;
    height: 50vh;
 }
 
-/*iframe#iframe1{
-   width: 95vw;
-   height: 50vh;
-}*/
-
 input#iothergender{
    display: none;
+}
+
+section#itimeday{
+   background-color: rgba(84, 104, 105, 0.774);
+   position: fixed;
+   right: 10px;
+   bottom: 40px;
+   display: block;
+   margin: auto;
+   margin-top: 20px;
+   padding: 1em;
+   border-radius: 10px;
+}
+
+div#itdtext{
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 0.8em;
+   text-align: center;
+}
+
+div#itdimg{
+   text-align: center;
+}
+
+p#copyright{
+   text-align: center;
+   width: 100%;
+   background-color: black;
+   color: white;
+   font-family: 'Courier New', Courier, monospace;
+   position: fixed;
+   bottom: 0px;
+   margin: auto;
+   padding: 5px;
 }
