@@ -72,21 +72,12 @@ body{
 }
 
 main{
-   display: flex;
    background-color: rgb(201, 201, 201);
-   height: auto;
    width: 70vw;
    margin: 50px auto;
    padding: 20px;
    border-radius: 21px;
    box-shadow: 9px 9px 15px  rgba(0, 0, 0, 0.205);
-   align-items: center;
-   justify-content: center;
-   
-   -webkit-transition: all 0.7s ease-in-out;
-   -o-transition: all 0.7s ease-in-out;
-   -moz-transition: all 0.7s ease-in-out;
-   transition: all 0.7s ease-in-out;
 }
 
 div#intro{
@@ -141,11 +132,9 @@ menu > ul > li:hover{
 }
 
 p#isections_intro{
-   color: #2e2e2ea9;
    text-align: center;
    font-variant: small-caps;
    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.322);
-   
 }
 
 div#iflex_sections{
@@ -266,8 +255,6 @@ section#itimeday{
    margin-top: 20px;
    padding: 1em;
    border-radius: 10px;
-
-   transition: all .5s ease-in-out;
 }
 
 div#itdtext{
@@ -290,5 +277,4 @@ p#copyright{
    bottom: 0px;
    margin: auto;
    padding: 5px;
-   transition: all .3s ease-in-out;
 }

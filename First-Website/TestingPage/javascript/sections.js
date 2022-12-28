@@ -4,7 +4,7 @@ _now = _now.getHours();
 let nextHour = _now;
 function newHour(){
    if(_now == nextHour){
-      nextHour += 1;
+      nextHour = _now+1
       return true;
    }
    return false;
@@ -90,30 +90,27 @@ function displayedSections(curr_id){
       }
    }
 
+
    document.getElementById("tables").style.order  = posicao.tables;
    document.getElementById("iframes").style.order = posicao.iframes;
    document.getElementById("forms").style.order   = posicao.forms;
 
 
    if((posicao.tables != 0) || (posicao.iframes != 0) || (posicao.forms != 0)){
-      let copyr    = document.querySelector('p#copyright');
-      let time     = document.querySelector('section#itimeday');
-      let secintro = document.querySelector('p#isections_intro');   
-
-      copyr.style.position   = 'unset';
-      copyr.style.width      = '98vw';
-      time.style.bottom      = '10px';
-      secintro.style.display = 'none';
+      let copyr = document.querySelector('p#copyright');
+      let time  = document.querySelector('section#itimeday');
+         
+      copyr.style.position = 'relative';
+      copyr.style.width    = '98vw';
+      time.style.bottom    = '10px';
    }else{
       let copyr = document.querySelector('p#copyright'); 
       let time  = document.querySelector('section#itimeday');
-      let secintro = document.querySelector('p#isections_intro');
 
       copyr.style.position = 'fixed';
       copyr.style.bottom   = '0px';
       copyr.style.width    = '100vw'; 
       time.style.bottom    = '40px';
-      secintro.style.display = 'block';
    }
 }
 
@@ -160,20 +157,21 @@ function tdImgContent(divContainer, img_path){
 
 //--- That function automatically changes the img according to a time
 function tdImg(){
-   let td_img  = document.getElementById('itdimg'); //var to img div
+   let td_img  = document.querySelector('div#itdimg'); //var to img div
 
    let hour = new Date();
    hour = hour.getHours();
-   
+
    if((hour >= 5) && (hour < 12) && (newHour())){
       tdImgContent(td_img, '../images/TimeDay/morning-circle.jpg');
    }else if((hour >= 12) && (hour < 18) && (newHour())){
-      tdImgContent(td_img, '../images/TimeDay/afternoon-circle.jpg');
+      tdImgContent('src', '../images/TimeDay/afternoon-circle.jpg');
    }else if((hour >= 18) && (hour < 24) && (newHour())){
-      tdImgContent(td_img, '../images/TimeDay/night-circle.jpg');
+      tdImgContent('src', '../images/TimeDay/night-circle.jpg');
    }else if(((hour == 24) || (hour < 5)) && (newHour())){
-      tdImgContent(td_img, '../images/TimeDay/dawn-circle.jpg');
+      tdImgContent('src', '../images/TimeDay/dawn-circle.jpg');
    }
+
 }
 
 //--- It calls the tdTime and tdImg functions
